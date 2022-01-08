@@ -1,0 +1,22 @@
+
+
+Miniciclo 1:
+	Estructurar el codigo para que esté preparado para las maquinas,buffos, jugadores y rebordes.
+	Pruebas de unidad.
+
+Miniciclo 2:
+	Implementar buffos.
+	Implementar rebordes.
+	Pruebas de unidad.
+
+
+Miniciclo 3:
+	Interfaz grafica pre-game.
+	Modo de juego acelerado.
+	Persistencia y pausa del juego.
+	Vinculación de la interfaz pre-game y el juego.
+
+Miniciclo 4:
+	Log de errores.
+	Pruebas de aceptacion
+	Otros (Historial de puntajes, notificar si se marcó un record etc).
