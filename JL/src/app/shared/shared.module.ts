@@ -8,8 +8,12 @@ import { HeaderComponent } from './components/header/header.component';
     MenuLateralComponent,
     HeaderComponent
   ],
-  imports: [
+  exports: [
+    MenuLateralComponent,
+    HeaderComponent, 
     CommonModule
+  ],
+  imports: [
   ]
 })
 export class SharedModule { }
