@@ -1,4 +1,4 @@
-import {Option} from './options'
+import {Option} from './Options'
 
 
 export class JConfig { 

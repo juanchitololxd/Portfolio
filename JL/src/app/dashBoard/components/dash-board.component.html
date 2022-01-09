@@ -3,7 +3,11 @@
   <mat-sidenav #sidenav mode="side" [(opened)]="opened">
     <mat-nav-list>
         <img src="./sda.jpg" alt="logo JL" />
-      <a mat-list-item *ngFor="let nav of menus">{{ nav }}</a>
+        
+        <div *ngFor="let nav of menus">
+          <app-menu-list-item [item]="nav" [depth]="0"></app-menu-list-item>
+        </div>
+      
     </mat-nav-list>
   </mat-sidenav>
 

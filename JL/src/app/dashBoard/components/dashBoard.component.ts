@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { JConfig } from './../../models/jConfig';
-import { Option} from './../../models/options';
+import { JConfig } from './../../models/JConfig';
 
 @Component({
   selector: 'app-dash-board',
@@ -8,17 +7,17 @@ import { Option} from './../../models/options';
   styleUrls: ['./dash-board.component.css']
 })
 export class DashBoardComponent implements OnInit {
-  jconfig: JConfig = JSON.parse('{ "title": "DashBoard", "options": [ { "name": "estudio", "enabled": "true" }, { "name": "finanzas", "enabled": "true" }, { "name": "tareas", "enabled": "true" } ] }');
+  jconfig: JConfig = JSON.parse('{ "title": "DashBoard", "options": [ { "name": "estudio", "enabled": "false", "depth": 0, "iconName": "help", "route": "dash", "children": [ { "name": "estudio2", "enabled": "false", "depth": 1, "iconName": "help", "route": ".", "children": [] } ] }, { "name": "Finanzas", "enabled": "false", "depth": 0, "iconName": "help", "route": "dash", "children": [] } ] }');
   opened: boolean = false;
-  menus: string[] = [];
+  menus: any[] = [];
 
   shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.jconfig);
     this.jconfig["options"].forEach(element => {
-      this.menus.push(element.name);
+      this.menus.push(element);
+
     });
   }
 

@@ -1,9 +1,8 @@
 
-export class Option {
-  name: string = "";
-  enabled: boolean = false;
-  constructor(){
-
-  }
-  
+export interface Option {
+  name: string;
+  enabled: boolean;
+  iconName: string;
+  route: string;
+  children: Option[];
 }
