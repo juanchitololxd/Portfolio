@@ -1,8 +1,21 @@
-<!-- (click)="sidenav.toggle()" -->
+<mat-sidenav-container class="example-container">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    [(opened)]="opened"
+    (opened)="events.push('open!')"
+    (closed)="events.push('close!')"
+  >
+    Sidenav content
+    <mat-nav-list>
+      <a mat-list-item routerLink="." *ngFor="let nav of menus">{{ nav }}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
 <mat-toolbar color="primary">
   <button
     mat-icon-button
-    
+    (click)="sidenav.toggle()"
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
@@ -32,3 +45,6 @@
     <mat-icon>help</mat-icon>
   </button>
 </mat-toolbar>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
