@@ -8,6 +8,7 @@ import { DashBoardComponent } from './components/dashBoard.component';
 const routes: Routes = [
     {
       path: '',
+      component: DashBoardComponent,
       children: [
         {path: 'estudio', component: EstudioComponent},
         {path: 'finanzas', component: FinanzasComponent},

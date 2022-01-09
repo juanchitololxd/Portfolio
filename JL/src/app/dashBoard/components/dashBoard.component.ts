@@ -9,7 +9,7 @@ import { Option} from './../../models/options';
 })
 export class DashBoardComponent implements OnInit {
   jconfig: JConfig = JSON.parse('{ "title": "DashBoard", "options": [ { "name": "estudio", "enabled": "true" }, { "name": "finanzas", "enabled": "true" }, { "name": "tareas", "enabled": "true" } ] }');
-  opened: boolean = true;
+  opened: boolean = false;
   menus: string[] = [];
 
   shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
