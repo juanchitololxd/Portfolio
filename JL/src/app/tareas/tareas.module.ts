@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TareasComponent } from './tareas.component';
+import { TareasComponent } from './components/tareas.component';
 
 
 

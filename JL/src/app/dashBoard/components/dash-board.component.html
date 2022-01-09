@@ -1,4 +1,33 @@
-<!-- <app-menu></app-menu> -->
 
-<h2>lets gou</h2>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <mat-nav-list>
+      <a mat-list-item routerLink="." *ngFor="let nav of menus">{{ nav }}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="container">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()" class="example-icon"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+      <img src="./sda.jpg" alt="logo empresa" />
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>person</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>help</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet>
+        <h1>sda</h1>
+    </router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

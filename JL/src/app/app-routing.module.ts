@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-
-import { DashBoardComponent } from './dashBoard/components/dashBoard.component';
+import { AppComponent } from './app.component';
 
 // const routes: Routes = [
 //   { 
@@ -27,13 +26,13 @@ import { DashBoardComponent } from './dashBoard/components/dashBoard.component';
 const routes: Routes = [
   {
     path: '',
-    component: DashBoardComponent,
+    component: AppComponent,
     children: [
-      {
-        path: '',
-        redirectTo: '/dash',
-        pathMatch: 'full',
-      },
+      // {
+      //   path: '',
+      //   redirectTo: '/dash',
+      //   pathMatch: 'full',
+      // },
       {
         path: 'dash',
         loadChildren: () => import('./dashBoard/dashBoard.module').then(m => m.DashBoardModule)

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FinanzasComponent } from './finanzas.component';
+import { FinanzasComponent } from './components/finanzas.component';
 
 
 
