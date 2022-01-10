@@ -1,8 +1,8 @@
 
 export interface Option {
+  id: number,
   name: string;
-  enabled: boolean;
   iconName: string;
-  route: string;
+  enabled: string;
   children: Option[];
 }

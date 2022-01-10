@@ -10,12 +10,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
-import { MenuListItemComponent } from './components/app-menu-list-item/app-menu-list-item.component';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTreeModule} from '@angular/material/tree';
 @NgModule({
   declarations: [
-    DashBoardComponent,
-    MenuListItemComponent
+    DashBoardComponent
   ],
   imports: [
     CommonModule,
@@ -26,6 +25,8 @@ import { MenuListItemComponent } from './components/app-menu-list-item/app-menu-
     MatButtonModule,
     MatListModule,
     MatDividerModule,
+    MatExpansionModule,
+    MatTreeModule
   ]
 })
 export class DashBoardModule { }

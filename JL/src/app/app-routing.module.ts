@@ -28,11 +28,11 @@ const routes: Routes = [
     path: '',
     component: AppComponent,
     children: [
-      // {
-      //   path: '',
-      //   redirectTo: '/dash',
-      //   pathMatch: 'full',
-      // },
+      {
+        path: '',
+        redirectTo: '/dash',
+        pathMatch: 'full',
+      },
       {
         path: 'dash',
         loadChildren: () => import('./dashBoard/dashBoard.module').then(m => m.DashBoardModule)
