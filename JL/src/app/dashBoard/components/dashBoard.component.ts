@@ -32,13 +32,12 @@ export class DashBoardComponent implements OnInit {
     let indx = +dir[0]-1;
     URL = this.generatePath(this.jconfig["options"][indx], URL, dir.substring(1));
     this.router.navigate([URL]);
-    this.closeMenus(URL);
+    this.closeMenus(nodo);
   }
 
-  closeMenus(URL: string) {
-    let name = URL.split('/')[2];
-    let nodo = this.jconfig["options"].forEach(option => {
-      if(option.name != name) this.treeControl.collapse(option);
+  closeMenus(nodo: Option) {
+    this.jconfig["options"].forEach(option => {
+      if(option.id != nodo.id) this.treeControl.collapse(option);
     })
     
   }
