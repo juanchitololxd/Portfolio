@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { EstudioComponent } from './../estudio/components/estudio.component';
+import { EstudioComponent } from './components/estudio/estudio.component';
 import { FinanzasComponent } from './../finanzas/components/finanzas.component';
 import { DashBoardComponent } from './components/dashBoard.component';
 

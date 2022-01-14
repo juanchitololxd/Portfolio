@@ -12,9 +12,11 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTreeModule} from '@angular/material/tree';
+import { EstudioComponent } from './components/estudio/estudio.component';
 @NgModule({
   declarations: [
-    DashBoardComponent
+    DashBoardComponent,
+    EstudioComponent
   ],
   imports: [
     CommonModule,
