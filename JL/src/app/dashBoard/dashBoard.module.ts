@@ -13,10 +13,16 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTreeModule} from '@angular/material/tree';
 import { EstudioComponent } from './components/estudio/estudio.component';
+import { MateriaDashComponent } from './components/estudio/materia-dash/materia-dash.component';
+import { RepasosDashComponent } from './components/estudio/repasos-dash/repasos-dash.component';
+import { ExamenesDashComponent } from './components/estudio/examenes-dash/examenes-dash.component';
 @NgModule({
   declarations: [
     DashBoardComponent,
-    EstudioComponent
+    EstudioComponent,
+    MateriaDashComponent,
+    RepasosDashComponent,
+    ExamenesDashComponent
   ],
   imports: [
     CommonModule,
